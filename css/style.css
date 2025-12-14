@@ -1,0 +1,384 @@
+@charset "utf-8";
+path {
+  fill: none;                /* 塗りなし */
+  stroke: #f1e4d5;           /* ペンの色 */
+  stroke-width: 0.7;            /* 線の太さ */
+  stroke-linecap: round;      /* 線の端を丸く */
+  stroke-linejoin: round;     /* 線の角を丸く */
+  
+  stroke-dasharray: 3000;     /* 線の全長（SVGのパスに合わせて調整） */
+  stroke-dashoffset: 3000;    /* 線を非表示に */
+  
+ opacity: 0;
+  animation: draw 4s ease forwards, fadeOut 3s ease 3s forwards;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
+body {
+  margin: 0; /* ブラウザのデフォルト余白を消す */
+  font-family:"Noto Serif JP",serif;
+}
+
+@media(max-width:600px)
+{.top-image{
+    width: 40%;
+}}
+@media(max-width:999px) and (min-width:601px)
+{.top-image{width:30%;
+margin-left:10%;}}
+@media(min-width:1000px)
+{.top-image{width:30%;
+margin-left:10%;}}
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+@media(max-width:600px)
+{.name{font-family: "Great Vibes";
+font-size:  300%;}
+.header-container {
+  display: flex;            /* 横並びにする */
+  align-items: center;      /* 画像と文字を縦方向の中央にそろえる */
+  padding: 5%;            /* ちょっと余白を入れる */
+}
+}
+@media(max-width:999px) and (min-width:601px)
+{.name{font-family: "Great Vibes";
+font-size:375%;
+margin-left:40%;}
+.header-container {
+  display: flex;            /* 横並びにする */
+  align-items: center;    /* 画像と文字を縦方向の中央にそろえる */
+  padding: 5%;            /* ちょっと余白を入れる */
+}}
+@media(min-width:1000px)
+{.name{font-family: "Great Vibes";
+font-size:600%;
+margin-left:40%;}
+.header-container {
+  display: flex;            /* 横並びにする */
+  align-items: center;    /* 画像と文字を縦方向の中央にそろえる */
+  padding: 5%;            /* ちょっと余白を入れる */
+}}
+
+@media(max-width:600px)
+{.content{text-align: center;
+font-size: 250%;
+position: relative;
+  padding: 30px;
+  z-index:0;
+ }
+
+.content::before{ padding: 30px;
+  background-image: url("../images/logo 1.jpg");
+background-size: contain;
+content: "";  
+background-position: center;
+ position: absolute;
+  inset: 0; /* top, right, bottom, left を0に */
+  opacity: 0.15;  /* ←背景画像の透過率（ここを調整） */
+  background-repeat: no-repeat;
+  z-index: -1;
+}}
+
+@media(min-width:601px)
+{.content{text-align:center;
+font-size:300%;
+position: relative;
+  padding: 30px;
+  z-index: 0;
+}
+.content::before{padding: 30px;
+  background-image: url("../images/logo 1.jpg");
+  content: "";  
+background-size: contain;
+background-position: center;
+ position: absolute;
+  inset: 0; /* top, right, bottom, left を0に */
+  opacity: 0.15;  /* ←背景画像の透過率（ここを調整） */
+z-index: -1;
+background-repeat: no-repeat;}}
+
+
+@media(max-width:600px)
+{.jp1{text-align:center;
+font-size:150%;}}
+@media(min-width:601px)
+{.jp1{text-align: center;
+font-size: 225%;}}
+
+@media(max-width:600px)
+{.coming{text-align: center;
+font-size: 200%;}}
+@media(min-width:601px)
+{.coming{text-align: center;
+font-size: 240%;}}
+
+@media(max-width:600px)
+{.access{text-align: center;
+font-size: 250%;
+position: relative;
+  padding: 30px;
+  z-index:0;}
+
+
+.access::before{ padding: 30px;
+  background-image: url("../images/logo 1.jpg");
+background-size: contain;
+content: "";  
+background-position: center;
+ position: absolute;
+  inset: 0; /* top, right, bottom, left を0に */
+  opacity: 0.15;  /* ←背景画像の透過率（ここを調整） */
+  background-repeat: no-repeat;
+  z-index: -1;
+}}
+@media(min-width:601px)
+{.access{text-align: center;
+font-size:300%;
+position: relative;
+  padding: 30px;
+  z-index:0;}
+
+
+.access::before{ padding: 30px;
+  background-image: url("../images/logo 1.jpg");
+background-size: contain;
+content: "";  
+background-position: center;
+ position: absolute;
+  inset: 0; /* top, right, bottom, left を0に */
+  opacity: 0.15;  /* ←背景画像の透過率（ここを調整） */
+  background-repeat: no-repeat;
+  z-index: -1;
+}}
+
+@media(max-width:600px)
+{.jp2{text-align: center;
+font-size:150%;}}
+@media(min-width:601px)
+{.jp2{text-align:center;
+font-size:225%}}
+.map-card {
+  display: block;
+  max-width: 360px;
+  border-radius: 16px;
+  background: #1f2f54;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media(hover: hover) and (pointer: fine){.map-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}}
+@media (hover: none) and (pointer: coarse) {
+  .map-card:active {
+    transform: scale(0.97);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+}
+.map-text{text-align: center;}
+@media(min-width:601px){.map-wrapper {
+  max-width: 300px;   /* ← 横幅を制限 */
+  margin: 40px auto;  /* ← 中央寄せ */
+}}
+@media(max-width:600px){.map-wrapper{max-width: 200px;   /* ← 横幅を制限 */
+  margin: 40px auto;  /* ← 中央寄せ */}}
+
+@media(max-width:400px)
+{.jp3{display: block;font-size: 10px;text-align: left;}}
+@media(max-width:600px) and (min-width:401px)
+{.jp3{display: block;font-size: 50%;text-align: left;}}
+@media(max-width:999px) and (min-width:601px)
+{.jp3{display: block;font-size:100%;text-align: left;}}
+@media(min-width:1000px)
+{.jp3{display:block;font-size:150%;text-align: left;}}
+
+@media(max-width:600px)
+{.place{text-align: center;
+font-size:250%;
+position: relative;
+  padding: 30px;
+  z-index:0;}
+.place::before{ padding: 30px;
+  background-image: url("../images/logo 1.jpg");
+background-size: contain;
+content: "";  
+background-position: center;
+ position: absolute;
+  inset: 0; /* top, right, bottom, left を0に */
+  opacity: 0.15;  /* ←背景画像の透過率（ここを調整） */
+  background-repeat: no-repeat;
+  z-index: -1;
+}}
+@media(min-width:601px)
+{.place{text-align: center;
+font-size:300%;
+position: relative;
+  padding: 30px;
+  z-index:0;}
+.place::before{ padding: 30px;
+  background-image: url("../images/logo 1.jpg");
+background-size: contain;
+content: "";  
+background-position: center;
+ position: absolute;
+  inset: 0; /* top, right, bottom, left を0に */
+  opacity: 0.15;  /* ←背景画像の透過率（ここを調整） */
+  background-repeat: no-repeat;
+  z-index: -1;
+}}
+
+@media(max-width:600px)
+{.jp4{text-align: center;
+font-size: 150%;}}
+@media(min-width:601px)
+{.jp4{text-align: center;
+font-size: 225%;}}
+
+@media(max-width:600px)
+{.jp5{text-align: center;
+font-size:100%;} }
+@media(min-width:601px)
+{.jp5{text-align: center;
+font-size:150%;}}
+
+@media(max-width:600px)
+{.visitors{text-align: center;
+font-size: 250%;position: relative;
+  padding: 30px;
+  z-index:0;}
+.visitors::before{ padding: 30px;
+  background-image: url("../images/logo 1.jpg");
+background-size: contain;
+content: "";  
+background-position: center;
+ position: absolute;
+  inset: 0; /* top, right, bottom, left を0に */
+  opacity: 0.1;  /* ←背景画像の透過率（ここを調整） */
+  background-repeat: no-repeat;
+  z-index: -1;
+}}
+@media(min-width:601px)
+{.visitors{text-align: center;
+font-size: 300%;position: relative;
+  padding: 30px;
+  z-index:0;}
+.visitors::before{ padding: 30px;
+  background-image: url("../images/logo 1.jpg");
+background-size: contain;
+content: "";  
+background-position: center;
+ position: absolute;
+  inset: 0; /* top, right, bottom, left を0に */
+  opacity: 0.1;  /* ←背景画像の透過率（ここを調整） */
+  background-repeat: no-repeat;
+  z-index: -1;
+}}
+
+@media(max-width:600px)
+{.jp6{text-align: center;
+font-size: 150%;}}
+@media(min-width:601px)
+{.jp6{text-align:center;
+font-size: 225%;}}
+
+@media(max-width:600px)
+{.jp7{text-align: center
+  ;font-size: 100%;
+padding-left: 20px;
+padding-right: 20px;}}
+@media(min-width:601px)
+{.jp7{text-align: center;
+font-size: 150%;
+padding-left: 20px;
+padding-right: 20px;}}
+
+.line{margin:0;}
+
+@media(max-width:600px)
+{footer{background-color:rgb(227, 214, 194);
+height:190px;
+margin: 0;}}
+@media(max-width:1000px) and (min-width:601px)
+{footer{background-color:rgb(227, 214, 194);
+margin:0;
+height:300px;}}
+@media(min-width:1001px)
+{footer{background-color:rgb(227, 214, 194);
+margin: 0;
+height:300px}}
+
+@media(max-width:600px)
+{.rikoten{width:140px;
+height:105px;
+float: left;
+margin-left: 10px;
+}
+}
+@media(max-width:1000px) and (min-width:601px)
+{.rikoten{width:240px;
+height:180px;
+float: left;
+margin-left: 15px;
+
+}}
+@media(min-width:1001px)
+{.rikoten{width:300px;
+height:225px;
+float: left;
+margin-left: 30px;
+}}
+
+@media(max-width:600px)
+{.kousiki{width:140px;
+height:105px;
+float: right;
+margin-right: 10px;}}
+@media(max-width:1000px) and (min-width:601px)
+{.kousiki{width:240px;
+height:180px;
+float: right;
+margin-right: 15px;}}
+@media(min-width:1001px)
+{.kousiki{width:300px;
+  height:225px;
+float: right;
+margin-right: 30px;}}
+
+.nanimonai{clear: both;}
+
+@media(max-width:600px)
+{.copyright{text-align: center;
+font-size: small;}}
+@media(min-width:601px)
+{.copyright{text-align: center;
+font-size:medium;}}
+
+img{border: none;
+display: block;}
+#content1{opacity: 0;
+  transition: opacity 1s ease;}
+#content1.show{opacity: 1;}
+#animation{position: fixed;
+  inset: 0; /* top, right, bottom, leftを全部0にする */
+  display: flex;
+  justify-content: center; /* 横方向の中央寄せ */
+  align-items: center;     /* 縦方向の中央寄せ */}
+#animation.fade-out{opacity:0;
+transition: opacity 1s ease;}
