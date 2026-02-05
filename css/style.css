@@ -44,6 +44,8 @@ header .gnav .menu {
     display: flex; /* 中の要素を横並びにする */
 }
 
+.logo-link{display: inline-block;}
+
 @media(max-width:600px)
 {.name{font-family: "Great Vibes";
 font-size:  300%;}
