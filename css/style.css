@@ -332,11 +332,11 @@ height:300px}}
 
 @media(hover: hover) and (pointer: fine){.rikoten:hover {
   transform: translateY(-4px);
-transition: transform 0.2s ease;}}
+}}
 @media (hover: none) and (pointer: coarse) {
   .rikoten:active {
     transform: scale(0.97);
-  transition: transform 0.2s ease;}
+ }
 }
 @media(max-width:600px)
 {.rikoten{width:140px;
@@ -362,12 +362,10 @@ box-shadow: 0 0 20px rgba(191, 174, 143, 0.6);
 }}
 
 @media(hover: hover) and (pointer: fine){.kousiki:hover {
-  transform: translateY(-4px);
-transition: transform 0.2s ease;}}
+  transform: translateY(-4px);}}
 @media (hover: none) and (pointer: coarse) {
   .kousiki:active {
-    transform: scale(0.97);
-  transition: transform 0.2s ease;}
+    transform: scale(0.97);}
 }
 @media(max-width:600px)
 {.kousiki{width:140px;
