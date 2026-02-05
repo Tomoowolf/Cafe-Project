@@ -32,15 +32,15 @@ body {
 
 @media(max-width:600px)
 {.top-image{
-    width: 100px;
+    width: 150px;
     display: inline-flex;
 }}
 @media(max-width:999px) and (min-width:601px)
-{.top-image{width:200px;
+{.top-image{width:300px;
 margin-left:10%;
 display: inline-flex;}}
 @media(min-width:1000px)
-{.top-image{width:300px;
+{.top-image{width:400px;
 margin-left:10%;
 display: inline-flex;}}
 header .gnav .menu {
@@ -51,8 +51,9 @@ header .gnav .menu {
 
 @media(max-width:600px)
 {.name{font-family: "Great Vibes";
-font-size:  300%;}
+font-size:  250%;}
 .header-container {
+  margin: auto;
   display: flex;            /* 横並びにする */
   align-items: center;      /* 画像と文字を縦方向の中央にそろえる */
   padding: 5%;            /* ちょっと余白を入れる */
@@ -60,7 +61,7 @@ font-size:  300%;}
 }
 @media(max-width:999px) and (min-width:601px)
 {.name{font-family: "Great Vibes";
-font-size:375%;
+font-size:450%;
 margin-left:40%;}
 .header-container {
   display: flex;            /* 横並びにする */
