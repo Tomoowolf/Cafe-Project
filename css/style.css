@@ -319,15 +319,15 @@ padding-right: 20px;}}
 .line{margin:0;}
 
 @media(max-width:600px)
-{footer{background-color:#c3ab7a;
+{footer{background-color:rgb(227, 214, 194);
 height:190px;
 margin: 0;}}
 @media(max-width:1000px) and (min-width:601px)
-{footer{background-color:#c3ab7a;
+{footer{background-color:rgb(227, 214, 194);
 margin:0;
 height:300px;}}
 @media(min-width:1001px)
-{footer{background-color:#c3ab7a;
+{footer{background-color:rgb(227, 214, 194);
 margin: 0;
 height:300px}}
 
