@@ -177,7 +177,7 @@ font-size:225%}}
   background: #1f2f54;
   text-decoration: none;
   color: #fff;
-  box-shadow: 0 0 10px #3b2a1a;
+  box-shadow: 0 0 15px #3b2a1a;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
