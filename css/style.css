@@ -25,6 +25,52 @@ path {
   }
 }
 
+@media(max-width:1000px){.swiper-wrapper {
+  /* wrapperのサイズを調整 */
+  width: 100%;
+  height: 150%;
+}
+
+
+
+.slide-img {
+  width: 100%;       /* 横幅をスライドに合わせる */     /* .swiper-wrapperと同じ高さにする */
+  object-fit: contain; /* 縦横比を保ったまま、余白が出ないように切り抜く */
+  display: block;    /* 下の隙間を消す */
+}}
+
+@media(min-width:1001px){.swiper-wrapper {
+  /* wrapperのサイズを調整 */
+  width: 100%;
+  aspect-ratio: 13 / 5 ;
+  margin: auto;
+  object-position: center bottom;  /* 下側を基準（上をカット） */
+}
+
+.slide-img {
+  width: 100%;       /* 横幅をスライドに合わせる */     /* .swiper-wrapperと同じ高さにする */
+  object-fit: cover; /* 縦横比を保ったまま、余白が出ないように切り抜く */
+  display: block;    /* 下の隙間を消す */
+  aspect-ratio: 12 / 5;
+  object-position: center bottom;
+}}
+
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 100 !important; /* 他のどの要素よりも大きい数字にする */
+  display: flex !important; /* 消えるのを防ぐ */
+  opacity: 1 !important;        /* 透明にならないようにする */
+  visibility: visible !important; /* 隠れないようにする */
+  pointer-events: auto !important; /* クリックできるようにする */
+  color:#F5F5DC !important;     /* 念のため色を付ける */
+}
+.swiper-button-disabled {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.swiper-pagination{color: #E6EBF0 !important;}
+
 body {
   margin: 0; /* ブラウザのデフォルト余白を消す */
   font-family:"Noto Serif JP",serif;
