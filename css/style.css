@@ -39,7 +39,10 @@ path {
   display: block;    /* 下の隙間を消す */
 }}
 
-@media(min-width:1001px){.swiper-wrapper {
+@media(min-width:1001px){
+  .swiper{width: 100%;aspect-ratio: 13 / 5;}
+
+  .swiper-wrapper {
   /* wrapperのサイズを調整 */
   width: 100%;
   aspect-ratio: 13 / 5 ;
