@@ -74,6 +74,8 @@ path {
 
 .swiper-pagination{color: #E6EBF0 !important;}
 
+.hiduke{font-size: larger;}
+
 body {
   margin: 0; /* ブラウザのデフォルト余白を消す */
   font-family:"Noto Serif JP",serif;
@@ -443,6 +445,8 @@ box-shadow: 0 0 20px #7a6a58;}}
 float: right;
 margin-right: 30px;
 box-shadow: 0 0 20px #7a6a58;}}
+
+.apuri{filter: drop-shadow(20px 20px 10px rgba(0,0,0,.5));}
 
 .nanimonai{clear: both;}
 
