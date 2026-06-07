@@ -245,16 +245,15 @@ font-size:225%}}
   padding-bottom: 2px; /* 下の余白 */
 }
 
-@media(hover: hover) and (pointer: fine){.map-card:hover {
+.map-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 0 5px #3b2a1a;
-}}
-@media (hover: none) and (pointer: coarse) {
+}
+
   .map-card:active {
     transform: scale(0.97);
     box-shadow: 0 0 15px #3b2a1a;
   }
-}
 @media(min-width:601px){.map-text{text-align: center;
 font-size:150%;}}
 @media(max-width:600px){.map-text{text-align: center;
@@ -450,14 +449,16 @@ height:300px;}}
 margin: 0;
 height:300px}}
 
-@media(hover: hover) and (pointer: fine){.rikoten:hover {
+.rikoten:hover {
   transform: translateY(-4px);
-}}
-@media (hover: none) and (pointer: coarse) {
+  transition: transform 0.2s ease;
+}
+ 
   .rikoten:active {
     transform: scale(0.97);
+    transition: transform 0.2s ease;
  }
-}
+
 @media(max-width:600px)
 {.rikoten{width:140px;
 height:105px;
@@ -481,12 +482,14 @@ margin-left: 30px;
 box-shadow: 0 0 20px #7a6a58;
 }}
 
-@media(hover: hover) and (pointer: fine){.kousiki:hover {
-  transform: translateY(-4px);}}
-@media (hover: none) and (pointer: coarse) {
+.kousiki:hover {
+  transform: translateY(-4px);
+transition: transform 0.2s ease;}
+
   .kousiki:active {
-    transform: scale(0.97);}
-}
+    transform: scale(0.97);
+  transition: transform 0.2s ease;}
+
 @media(max-width:600px)
 {.kousiki{width:140px;
 height:105px;
